@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   /// Changes the color of the screen to a random color.
   /// Realization with calls of one _random.
-  @Deprecated("Challange to take one int and convert it to RGB")
+  @Deprecated("Challange to take one int")
   void changeColorWithOneInt() {
     final int intColor = _random.nextInt(_maxIntColorValue);
     setState(() {
