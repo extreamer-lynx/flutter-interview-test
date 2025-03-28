@@ -30,9 +30,10 @@ class DebugBottomSheet extends StatelessWidget {
                     children: <Widget>[
                       const Text('Debug color'),
                       const SizedBox(height: 20),
-                      Text(
-                        'Color: \n ${color.r}, \n ${color.g}, \n ${color.b}',
-                      ),
+                      const Text('Color:'),
+                      Text(" Red: ${color.r}"),
+                      Text(" Green: ${color.g}"),
+                      Text(" Blue: ${color.b}"),
                     ],
                   ),
                 ),
