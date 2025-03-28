@@ -14,12 +14,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final _maxIntColorValue = 4294967295;
-  final int _maxColorValueForRGB = 0xff;
-  final int _redShift = 16;
-  final int _greenShift = 8;
-  final int _blueShift = 0;
-  final int _maxColorValue = 255;
+  static const _maxIntColorValue = 4294967295;
+  static const int _maxColorValueForRGB = 0xff;
+  static const int _redShift = 16;
+  static const int _greenShift = 8;
+  static const int _blueShift = 0;
+
+  static const int _maxColorValue = 255;
   final _random = Random();
 
   Color _color = Colors.white;
