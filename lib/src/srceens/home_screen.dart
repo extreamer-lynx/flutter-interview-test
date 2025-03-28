@@ -27,7 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   /// Changes the color of the screen to a random color.
   /// Realization with calls of three _randoms.
-  void _changeColor() {
+  @Deprecated("Challange to take three int")
+  void changeColor() {
     setState(() {
       _color = Color.fromRGBO(
         _random.nextInt(_maxColorValue),
@@ -40,8 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   /// Changes the color of the screen to a random color.
   /// Realization with calls of one _random.
-  @Deprecated("Challange to take one int")
-  void changeColorWithOneInt() {
+  void _changeColorWithOneInt() {
     final int intColor = _random.nextInt(_maxIntColorValue);
     setState(() {
       _color = Color.fromRGBO(
@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
     body: DebugBottomSheet(
       color: _color,
       child: GestureDetector(
-        onTap: _changeColor,
+        onTap: _changeColorWithOneInt,
         child: AnimatedContainer(
           color: _color,
           duration: const Duration(milliseconds: 500),
